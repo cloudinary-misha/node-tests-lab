@@ -8,10 +8,15 @@ describe('Array', function() {
 });
 
 
-describe('Environemnt settings', function() {
+describe('Environement settings', function() {
   describe('#Environment variables are set', function() {
     it('it should return env variable TEST=yes', function() {
       assert.equal(process.env.TEST, "yes");
     });
+    
+    it('it should return env variable CUSTOM_VAR=yes', function() {
+      assert.equal(process.env.CUSTOM_VAR, "yes");
+    });
   });
 });
+
