@@ -3,5 +3,7 @@ node_js:
   - "8"
   - "6"
   - "4"
+env:
+  - TEST=yes
 install:
   - npm install

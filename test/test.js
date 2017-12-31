@@ -6,3 +6,12 @@ describe('Array', function() {
     });
   });
 });
+
+
+describe('Environemnt settings', function() {
+  describe('#Environment variables are set', function() {
+    it('it should return env variable TEST=yes', function() {
+      assert.equal(process.env.TEST, "yes");
+    });
+  });
+});
