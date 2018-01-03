@@ -1,9 +1,10 @@
 language: node_js
 node_js:
-  - "8"
-  - "6"
-  - "4"
+- '8'
+- '6'
+- '4'
 env:
-  - TEST=yes
+  global:
+    secure: GYB6Jr/9l8LP0EjzNbM/5MLycuQaqzvzhKhPhOClr/fQaO2ERP+WrUHhkPkGQTWk7SPpkms93cDtQ9uRJQxPSGlqOpc+puUfBq/kqx+J7pufMnNOChS7FPhTwOPs6jcXbfk+6lioy5BB0IFr2fhyrsfXB4CODWd2g6wzRQlPZXcFydwW+OFzra+/8b/gFLKLvqY7Z6DPHVuG7nKARcrzphJHYCFxfknTqNXMfgxFASy6CqJL6tlHj4MruOFoSu6U3FJQHhr4zaVuDD4NU4nLHac/L17E4nRNnVInABH6vaQMZ381YbfHBPMzgyTGjVYhRmeBf7qYWfCdiVmbUKsTq9SBKWqnHa2NZGjpFlRN4bieLhyloLVUlXcdIbnnoxznHaHcZvYe0d1Z3tzeIAc+RsFL6X7y3XcoZvYf4/Xm5/tahNd9pcr5YBH4lGbZaV1rEhjPJ7MjCXMxMP8ueahOzNPReWua6jjydoq0wDxiiiXsm+fc+CncAX+s/fHNgYuMshZBUYPI4B+86AzlyKryEcbfl+0vDQrZulf27gsoArrth15/5A/et0ecp49JQvynJukkphgd/OuCoNz35FY3CmyLRDXw25MKeNeLQh+Kkx7paDHHLE2+6KbiaIf7dmYl1ph0TNar5jJpuK4/9cXv9laBKUzdfZBAjoJL6XapfCw=
 install:
-  - npm install
+- npm install
