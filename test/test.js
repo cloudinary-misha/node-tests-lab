@@ -14,9 +14,8 @@ describe('Environement settings', function() {
       assert.equal(process.env.TEST, "yes");
     });
     
-    var bool = !!(process.env.CLOUDINARY_URL);
-    it('CLOUDINARY_URL should exist', function() {
-      assert.ok(bool);
+    it('it should check CLOUDINARY_URL', function() {
+      assert.equal(process.env.CLOUDINARY_URL, "cloudinary://09287340928734:638nxwbfFZQk@sdk-test");
     });
   });
 });
