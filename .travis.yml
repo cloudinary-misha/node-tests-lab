@@ -6,5 +6,10 @@ install:
 - npm install
 
 before_script:
-- ./scripts/deploy.sh
+- export CLOUDINARY_URL=$CLOUDINARY_URL_STAGING
+  
+  
+  
+  
+# - ./scripts/deploy.sh
 
