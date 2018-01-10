@@ -2,9 +2,9 @@ language: node_js
 node_js:
 - '8'
 
-before_script:
-- scripts/deploy.sh
-
 install:
 - npm install
+
+before_script:
+- ./scripts/deploy.sh
 
