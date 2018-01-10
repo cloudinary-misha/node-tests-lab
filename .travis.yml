@@ -2,9 +2,8 @@ language: node_js
 node_js:
 - '8'
 
-before_install:
-- export CLOUDINARY_URL=$CLOUDINARY_URL_STAGING
-- echo "$CLOUDINARY_URL"
+before_script:
+- scripts/deploy.sh
 
 install:
 - npm install
