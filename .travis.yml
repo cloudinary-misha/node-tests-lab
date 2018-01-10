@@ -9,5 +9,5 @@ before_script:
 - export CLOUDINARY_URL=$CLOUDINARY_URL_STAGING
   
 script:
-- scripts/deploy.sh
+- if [[ $TRAVIS_BRANCH == *"jenkins-staging"* ]]; then export CLOUDINARY_URL=$CLOUDINARY_URL_STAGING; fi
 
