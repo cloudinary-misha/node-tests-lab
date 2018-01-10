@@ -1,8 +1,7 @@
 language: node_js
 node_js:
 - '8'
-env:
-  global:
-    secure: "NLRzeVjIEe/dfdjMYPMprZYM/5ZH2+YtRXgJ1KUNbkoR4hRIu6+y4strX0R34bkgr/xsZrE9OuRLxXmfFWBbbvU4IiZfjJMXL4KZ5b61FdhbINkLkN6IQjcG2+AyJshumAzhKbfc+RC2jlJ+eklJJMIzhICBhJS57IOyCl4Xo1ODaZysU5kDPsRNLAir7/9GzDgZUEfFS+FWqra6Lcb2Wn98SAhAXkgI1RD786j1JV+X0BV3hOqARXTG8CCDEJX0YVZGglazh9X4pXLfbRCSScuUI8kAql2XPIwFY/uxG2Lub2qrepJIXwfbHaFknBOUAMMF91YWOJjdS+RZFaDwUHgNxuAyWE873xW6ohfEP0KNhsSSpHIqoFsOio8WRkbPuyPxuuyUXQ7CGZj/antDCIe/pKjfUcgWPxXmA0a84uf89iuQ2v4za1Hdv+tvlNmQEzVrRc//bt2vyZlT925n+nLlfpCPEhTmclme0J+gTK1N13nsC7SXgfZnfQ68j29NK+1W1lP3lVJ2ilL8jB4MYoDkUML+O5hLjuOpZYEyhu58F9/usbxRxBSgcnljjy9DTlcpvIKFzGU8u7MFolnUzGHYrbFaRCVjvIYGajsz1zsu5OeGpkk347c53vcjBT0mxh5yZMTgRnD59hC1UdWSYezhnGXCOdtcmko/AO3MjwA="
 install:
 - npm install
+before_script:
+- echo $TRAVIS_BRANCH
