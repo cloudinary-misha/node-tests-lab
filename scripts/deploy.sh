@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+
+export CLOUDINARY_URL=$CLOUDINARY_URL_STAGING
+echo $CLOUDINARY_URL
+echo $TRAVIS_BUILD
