@@ -6,8 +6,7 @@ install:
 - npm install
 
 before_script:
-- export CLOUDINARY_URL=$CLOUDINARY_URL_STAGING
-  
-script:
 - if [[ $TRAVIS_BRANCH == *"jenkins-staging"* ]]; then export CLOUDINARY_URL=$CLOUDINARY_URL_STAGING; fi
+
+
 
