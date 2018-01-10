@@ -5,4 +5,4 @@ install:
 - npm install
 before_script:
 - echo "Misha"
-- echo $TRAVIS_BRANCH
+- echo "$TRAVIS_BRANCH"
