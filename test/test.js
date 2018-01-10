@@ -19,8 +19,8 @@ describe('Environement settings', function() {
       assert.equal(process.env.CLOUDINARY_URL, "staging");
     });
     
-    it('it should check TRAVIS_BUILD', function() {
-      assert.ok(process.env.TRAVIS_BUILD.indexOf("jenkins-staging")>-1);
+    it('it should check TRAVIS_BRANCH', function() {
+      assert.ok(process.env.TRAVIS_BRANCH.indexOf("jenkins-staging")>-1);
     });
   });
 });

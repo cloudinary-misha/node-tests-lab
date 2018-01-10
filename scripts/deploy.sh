@@ -1,5 +1,6 @@
-#!/usr/bin/env bash
+#!/bin/bash
+set -ev
 
-export CLOUDINARY_URL=$CLOUDINARY_URL_STAGING
-echo $CLOUDINARY_URL
-echo $TRAVIS_BUILD
+if [[ $TRAVIS_BRANCH == *"jenkins-staging"* ]]; then
+  export CLOUDINARY_URL=$CLOUDINARY_URL_STAGING
+fi
