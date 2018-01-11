@@ -16,7 +16,7 @@ describe('Environement settings', function() {
     });
     
     it('it should check CLOUDINARY_URL', function() {
-      assert.equal(process.env.CLOUDINARY_URL, "staging");
+      assert.equal(process.env.CLOUDINARY_URL, "cloudinary://123123123123:kjbaskdjaksdj@misha");
     });
     
     it('it should check TRAVIS_BRANCH', function() {
