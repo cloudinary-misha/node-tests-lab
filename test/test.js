@@ -19,7 +19,7 @@ describe('Environement settings', function() {
     
     if(process.env.TRAVIS_BRANCH.indexOf('staging_branch')>-1){
       it('it should check CLOUDINARY_URL for STAGING', function() {
-        assert.equal(process.env.CLOUDINARY_URL, "cloudinary://123123123123:kjbaskdjaksdj@misha");
+        assert.equal(process.env.CLOUDINARY_URL, "cloudinary://716523716523:sadasdasdasdadasd@mishanya?upload_prefix=https://staging-api.cloudinary.com");
       });
     }
     
