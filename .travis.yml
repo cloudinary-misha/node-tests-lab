@@ -3,3 +3,7 @@ node_js:
 - '8'
 install:
 - npm install
+# blocklist
+branches:
+  except:
+  - staging-test
