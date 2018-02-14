@@ -19,7 +19,7 @@ describe('Environement settings', function() {
     }
     
     if(process.env.TRAVIS_BRANCH.indexOf('staging-test')>-1){
-      console.log("entered prod mode");
+      console.log("entered stage mode");
       it('it should check CLOUDINARY_URL for STAGING', function() {
         assert.equal(process.env.CLOUDINARY_URL, "stage");
       });
