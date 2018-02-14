@@ -12,14 +12,16 @@ describe('Environement settings', function() {
   describe('#Environment variables are set', function() {
 
     if(process.env.TRAVIS_BRANCH.indexOf('master')>-1){
+      console.log("entered prod mode");
       it('it should check CLOUDINARY_URL for MASTER', function() {
         assert.equal(process.env.CLOUDINARY_URL, "prod");
       });
     }
     
-    if(process.env.TRAVIS_BRANCH.indexOf('staging_branch')>-1){
+    if(process.env.TRAVIS_BRANCH.indexOf('staging-test')>-1){
+      console.log("entered prod mode");
       it('it should check CLOUDINARY_URL for STAGING', function() {
-        assert.equal(process.env.CLOUDINARY_URL, "cloudinary://716523716523:sadasdasdasdadasd@mishanya?upload_prefix=https://staging-api.cloudinary.com");
+        assert.equal(process.env.CLOUDINARY_URL, "stage");
       });
     }
     
