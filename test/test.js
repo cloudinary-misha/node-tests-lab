@@ -24,6 +24,8 @@ describe('Environement settings', function() {
         assert.equal(process.env.CLOUDINARY_URL, "stage?a=1&b=1");
       });
     }
+
+    assert.equal("bla", "bla1");
     
   });
 });
