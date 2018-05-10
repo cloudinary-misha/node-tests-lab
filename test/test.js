@@ -25,8 +25,6 @@ describe('Environement settings', function() {
       });
     }
 
-    assert.equal("bla", "bla1");
-    
   });
 });
 
